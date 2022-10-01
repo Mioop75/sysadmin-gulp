@@ -1,0 +1,14 @@
+.services-price {
+  margin-bottom: 102px;
+
+  &__title {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    &:not(:last-child) {
+      margin-bottom: 96px;
+    }
+  }
+}

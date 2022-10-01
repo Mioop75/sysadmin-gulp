@@ -1,0 +1,25 @@
+.breadcrumb {
+
+  // .breadcrumb__list
+
+  &__list {
+    display: flex;
+
+  }
+
+  // .breadcrumb__item
+
+  &__item {
+    &+& {
+      margin-left: 10px;
+    }
+  }
+
+  // .breadcrumb__item--active
+
+  &__item--active {
+    &::before {
+      content: "/";
+    }
+  }
+}

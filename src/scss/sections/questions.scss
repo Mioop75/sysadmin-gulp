@@ -1,0 +1,48 @@
+.questions {
+  background-image: url("/img/do-you-have-questions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 68px 0;
+  margin-bottom: 120px;
+
+
+  // .questions__title
+
+  &__title {
+    color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 68px;
+    }
+  }
+
+  // .questions__form
+
+  &__form {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .questions__group
+
+  &__group {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  // .questions__input
+
+  &__input {
+    text-align: left;
+    padding: 19px 13px;
+
+    &+& {
+      margin-left: 42px;
+    }
+  }
+}

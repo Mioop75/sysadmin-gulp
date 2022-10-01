@@ -1,0 +1,215 @@
+<div class="calculator">
+  <div class="container calculator__container">
+    <div class="filter">
+      <div class="filter__item filter__item-1">
+        <div class="filter__item-1">
+          <div class="filter__between">
+            <div class="filter__item-text">Количество пользователей</div>
+            <div class="filter__item-number border">10</div>
+          </div>
+          <div class="filter__range" id="range-countUsers"></div>
+          <div class="filter__row">
+            <div class="filter__item-number">1</div>
+            <div class="filter__item-number">больше 50</div>
+          </div>
+        </div>
+        <div class="filter__item-2">
+          <div class="filter__between">
+            <div class="filter__item-text">Количество Ваших серверов (включая виртуальные),
+              которые нужно администрировать</div>
+            <div class="filter__item-number border">10</div>
+          </div>
+          <div class="filter__range" id="range-countServers"></div>
+          <div class="filter__between">
+            <div class="filter__item-number">1</div>
+            <div class="filter__item-number">больше 50</div>
+          </div>
+        </div>
+      </div>
+      <div class="filter__item filter__item-2">
+        <div class="filter__item-text">Предоставляем сервер бесплатно (Возможность изменить характеристики)</div>
+        <div class="filter__row">
+          <div class="filter__name">Ядер CPU (Процессор Xeon)</div>
+          <div class="filter-counter">
+            <span>2-4 ядра</span>
+            <div class="filter-counter__btns">
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8L7 1L13 8" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 8L13 1" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="filter__range" id="range-cpu"></div>
+        </div>
+        <div class="filter__row">
+          <div class="filter__name">Оперативная память (RAM)</div>
+          <div class="filter-counter">
+            <span>8 Гб</span>
+            <div class="filter-counter__btns">
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8L7 1L13 8" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 8L13 1" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="filter__range" id="range-ram"></div>
+        </div>
+        <div class="filter__row">
+          <div class="filter__name">Объем диска SSD / NVME</div>
+          <div class="filter-counter">
+            <span>120 Гб SSD</span>
+            <div class="filter-counter__btns">
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8L7 1L13 8" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 8L13 1" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="filter__range" id="range-ssd"></div>
+        </div>
+        <div class="filter__row">
+          <div class="filter__name">Количество резервных копий</div>
+          <div class="filter-counter">
+            <span>7</span>
+            <div class="filter-counter__btns">
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8L7 1L13 8" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="filter-counter__btn">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 8L13 1" stroke="#949494" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="filter__range" id="range-reserve"></div>
+        </div>
+      </div>
+      <div class="filter__item filter__item-3">
+        <div class="filter__row">
+          <div class="filter__item-text">Режим обслуживания</div>
+          <div class="filter__choice-grid">
+            <label class="filter__choice">
+              <input type="radio" name="choice-mode-service">
+              <span>Обычний</span>
+            </label>
+            <label class="filter__choice">
+              <input type="radio" name="choice-mode-service">
+              <span>Только удаленный</span>
+            </label>
+          </div>
+        </div>
+        <div class="filter__row">
+          <div class="filter__item-text">График</div>
+          <div class="filter__choice-grid">
+            <label class="filter__choice">
+              <input type="radio" name="choice-schedule" placeholder="">
+              <span>9:00 до 18:00</span>
+            </label>
+            <label class="filter__choice">
+              <input type="radio" name="choice-schedule" placeholder="">
+              <span>8:00 до 22:00</span>
+            </label>
+            <label class="filter__choice">
+              <input type="radio" name="choice-schedule" placeholder="">
+              <span>24/7</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filter__item filter__item-4">
+        <div class="filter__item-text">IT Поддержка</div>
+        <div class="filter__choice-grid">
+          <label class="filter__choice">
+            <input type="radio" name="choice-it-support">
+            <span>Удаленный</span>
+          </label>
+          <label class="filter__choice">
+            <input type="radio" name="choice-it-support">
+            <span>Стандарт</span>
+          </label>
+          <label class="filter__choice">
+            <input type="radio" name="choice-it-support">
+            <span>Расширенный</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter__item filter__item-5">
+        <div class="filter__choice-grid">
+          <label class="filter__choice">
+            <input type="radio" name="choice-schedule">
+            <span>
+              < 5 ПК</span>
+          </label>
+          <label class="filter__choice">
+            <input type="radio" name="choice-schedule" class="filter__choice">
+            <span>
+              < 10 ПК</span>
+          </label>
+          <label class="filter__choice">
+            <input type="radio" name="choice-schedule" class="filter__choice" disabled>
+            <span>
+              < 20 ПК</span>
+          </label>
+          <label class="filter__choice">
+            <input type="radio" name="choice-schedule" class="filter__choice" disabled>
+            <span>> 21ПК</span>
+          </label>
+        </div>
+        <button class="btn btn--full filter__btn">Рассчитать</button>
+      </div>
+    </div>
+    <div class="calculator__info">
+      <div class="calculator__info-1">Ориентировочная стоимость</div>
+      <div class="calculator__info-2"><span>15 000</span> грн/мес</div>
+      <button class="btn btn--full">Отправить КП</button>
+      <div class="calculator__info-3">Нужна помощь?</div>
+      <div class="calculator__info-4">
+        <p>Звоните ежедневно
+          с 8.00 до 20.00</p>
+        <div class="calculator__info-4-row">
+          <div>
+            <img src="@img/phone.svg" alt="Иконка телефона">
+          </div>
+          <div>
+            <a href="#">+38 (044)232-06-03</a>
+            <a href="#">+38 (067)701-06-03</a>
+          </div>
+        </div>
+      </div>
+      <div class="calculator__info-5">
+        <p>Или напишите нам в мессенджере:</p>
+        <ul class="socials__list">
+          <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/telegram.png" alt=""></a>
+          </li>
+          <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/whatapp.svg" alt=""></a>
+          </li>
+          <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/viber.svg" alt=""></a>
+          </li>
+          <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/email.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

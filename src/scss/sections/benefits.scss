@@ -1,0 +1,18 @@
+.benefits {
+  margin-bottom: 60px;
+
+  // .benefits__title
+
+  &__title {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  // .benefits__subtitle
+
+  &__subtitle {
+    &:not(:last-child) {
+      margin-bottom: 97px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.socials {
+
+  // .socials__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  // .socials__item
+
+  &__item {
+    &+& {
+      margin-left: 12px;
+    }
+  }
+
+  // .socials__link
+
+  &__link {
+  }
+}

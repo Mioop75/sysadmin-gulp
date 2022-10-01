@@ -1,0 +1,9 @@
+a {
+  transition: color .3s;
+
+  @media(any-hover: hover) {
+    &:hover {
+      color: $colorLinkHover;
+    }
+  }
+}

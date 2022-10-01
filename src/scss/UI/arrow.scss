@@ -1,0 +1,11 @@
+.arrow::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 11px;
+  background-color: #000;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  margin-left: 5px;
+  transition: all .3s;
+}

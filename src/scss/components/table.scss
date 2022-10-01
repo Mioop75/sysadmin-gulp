@@ -1,0 +1,39 @@
+.table {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+
+  // .table__col
+
+  &__col {
+    &:last-child {
+      border-left: 1px solid #D2D2D2;
+      padding-left: 67px;
+      margin-left: 10px;
+    }
+  }
+
+  // .table__item
+
+  &__item {
+    padding-bottom: 13px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #D2D2D2;
+    }
+
+    font-size: rem(16);
+
+  }
+
+  // .table__item--bold
+
+  &__item--bold {
+    font-weight: 700;
+  }
+
+  // .table__item--upper
+
+  &__item--upper {
+    text-transform: uppercase;
+  }
+}

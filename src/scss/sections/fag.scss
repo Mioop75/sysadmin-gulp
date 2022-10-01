@@ -1,0 +1,86 @@
+.faq {
+  margin-bottom: 176px;
+
+  // .faq__title
+
+  &__title {}
+
+  // .faq__subtitle
+
+  &__subtitle {
+    &:not(:last-child) {
+      margin-bottom: 81px;
+    }
+  }
+}
+
+.accordion {
+  --acordion-time: 0.3s;
+
+  &+& {
+    margin-top: 50px;
+  }
+
+  &--active {
+    .accordion__control {
+      &::after {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__control {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    outline: none;
+    position: relative;
+
+    span {
+      font-weight: bold;
+      font-size: rem(24);
+      color: $blue;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      background-color: $blue;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &::before {
+      width: 30px;
+      height: 1px;
+    }
+
+    &::after {
+      width: 1px;
+      height: 30px;
+      top: -15px;
+      right: 14px;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 17px 0px;
+    will-change: max-height;
+    transition: all var(--acordion-time) ease-out;
+    font-size: rem(20);
+    line-height: math.div(33, 20);
+    color: $blue;
+  }
+}
+
+.accordion--active {
+  .accordion__content {
+    opacity: 1;
+  }
+}

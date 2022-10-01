@@ -1,0 +1,9 @@
+.includes {
+  margin-bottom: 55px;
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 90px;
+    }
+  }
+}

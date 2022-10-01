@@ -1,0 +1,46 @@
+@use "sass:math";
+
+// Breakpoints
+
+// Max
+
+$breakpoint1400: 1399.98px;
+$breakpoint1200: 1199.98px;
+$breakpoint992: 991.98px;
+$breakpoint768: 767.98px;
+$breakpoint576: 575.98px;
+$breakpoint425: 424.98px;
+$breakpoint360: 358.98px;
+
+$headerBreakpoint: 767.98px;
+
+// Min
+
+$min-breakpoint1400: 1400px;
+$min-breakpoint1200: 1200px;
+$min-breakpoint992: 992px;
+$min-breakpoint768: 768px;
+$min-breakpoint576: 576px;
+$min-breakpoint425: 425px;
+$min-breakpoint360: 360px;
+
+$min-headerBreakpoint: 768px;
+
+// Colors
+
+$white: #fff;
+$black: #000;
+$blue: #073465;
+$red: #C90000;
+$colorLink: #fff;
+$colorLinkHover: $red;
+
+// Fonts
+
+// Default Varibles
+$defaultFont: "Gilroy", sans-serif;
+$fontWeight: 500;
+$fontSize: 13;
+$lineHeight: 15;
+$text-color: $black;
+$container: 1139px;

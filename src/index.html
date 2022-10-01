@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include("html/head.html", {
+  "title": "Главная"
+  })
+</head>
+
+<body class="webp">
+  <div class="wrapper">
+    @@include("html/components/header.html")
+    <main class="main">
+      @@include("html/sections/intro.html")
+      @@include("html/sections/benefits.html")
+      <div class="bg-gray">
+        @@include("html/sections/services-price.html")
+        @@include("html/sections/blog-info.html")
+        <!-- Потом сделать калькулятор нужно -->
+        @@include("html/sections/want.html")
+        @@include("html/sections/includes.html")
+      </div>
+      @@include("html/sections/decide.html")
+      <!-- Потом настроить слайдер нужно -->
+      @@include("html/sections/included.html") 
+      @@include("html/sections/admin-services.html") 
+      @@include("html/sections/questions.html") 
+      @@include("html/sections/system.html") 
+      <!-- Доделать этапы -->
+      @@include("html/sections/stages.html") 
+      @@include("html/sections/guarantee.html") 
+      @@include("html/sections/why.html") 
+      @@include("html/sections/fag.html") 
+
+    </main>
+    @@include("html/components/footer.html")
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

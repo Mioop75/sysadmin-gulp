@@ -1,0 +1,120 @@
+// Input
+input {
+  width: 100%;
+  padding: 10px;
+  background: #F3F3F3;
+  border: 1px solid #969696;
+  border-radius: 25px;
+  outline: none;
+
+  font-weight: 600;
+  font-size: rem(18);
+  color: #000;
+  text-align: center;
+
+  &::placeholder {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: rem(18);
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+// Textarea
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #eee;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+// Radio
+.radio {
+  position: relative;
+
+  &__input {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__label {
+    padding-left: 25px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: background-color 0.3s, border 0.3s;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: red;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transition: opacity 0.3s;
+    }
+  }
+}
+
+// Checkbox
+.checkbox {
+  position: relative;
+
+  &__input {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__label {
+    padding-left: 25px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: background-color 0.3s, border 0.3s;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: red;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transition: opacity 0.3s;
+    }
+  }
+}

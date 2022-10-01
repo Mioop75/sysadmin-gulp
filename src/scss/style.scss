@@ -1,0 +1,72 @@
+@use 'sass:math';
+
+@import "modules/config";
+
+@import "modules/functions";
+
+@import "modules/mixins";
+
+/*
+-------Reset----------
+*/
+
+@import "modules/reset";
+
+/*
+----------Base-------------
+*/
+
+@import "modules/base";
+
+/*
+---------Header-----------
+*/
+
+@import "components/header";
+
+// UI
+
+@import "UI/burger";
+@import "UI/form";
+@import "UI/button";
+@import "UI/link";
+@import "UI/arrow";
+
+// Components
+@import "components/socials";
+@import "components/card";
+@import "components/table";
+@import "components/calculator";
+
+
+// Sections
+@import "sections/intro";
+@import "sections/benefits";
+@import "sections/services-price";
+@import "sections/blog-info";
+@import "sections/want";
+@import "sections/includes";
+@import "sections/decide";
+@import "sections/included";
+@import "sections/admin-services";
+@import "sections/questions";
+@import "sections/system";
+@import "sections/stages";
+@import "sections/guarantee";
+@import "sections/why";
+@import "sections/fag";
+
+
+/*
+---------Main-----------
+*/
+
+.main {
+  flex: 1 1 auto;
+}
+
+/*
+---------Footer-----------
+*/
+
+@import "components/footer";

@@ -1,0 +1,49 @@
+body {
+  font-family: $defaultFont;
+  font-weight: $fontWeight;
+  line-height: math.div($lineHeight, $fontSize);
+  font-size: rem($fontSize);
+  color: $text-color;
+  height: 100%;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// wrapper
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: $container + 30;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: rem(38);
+  text-transform: uppercase;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.subtitle {
+  font-size: rem(20);
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: #F1F1F1;
+  padding: 120px 0 65px;
+  margin-bottom: 55px;
+}
