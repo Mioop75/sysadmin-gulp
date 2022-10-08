@@ -1,86 +1,142 @@
 .faq {
-  margin-bottom: 176px;
 
-  // .faq__title
+	// .faq__title
 
-  &__title {}
+	&__title {}
 
-  // .faq__subtitle
+	// .faq__subtitle
 
-  &__subtitle {
-    &:not(:last-child) {
-      margin-bottom: 81px;
-    }
-  }
+	&__subtitle {
+		&:not(:last-child) {
+			margin-bottom: 81px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 100px;
+			}
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 77px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 30px;
+			}
+		}
+	}
 }
 
 .accordion {
-  --acordion-time: 0.3s;
+	--acordion-time: 0.3s;
 
-  &+& {
-    margin-top: 50px;
-  }
+	&+& {
+		margin-top: 50px;
 
-  &--active {
-    .accordion__control {
-      &::after {
-        visibility: hidden;
-      }
-    }
-  }
+		@media(max-width: $breakpoint1200) {
+			margin-top: 35px;
+		}
 
-  &__control {
-    width: 100%;
-    background-color: transparent;
-    cursor: pointer;
-    text-align: left;
-    border: none;
-    outline: none;
-    position: relative;
+		@media(max-width: $breakpoint576) {
+			margin-top: 3px;
+		}
+	}
 
-    span {
-      font-weight: bold;
-      font-size: rem(24);
-      color: $blue;
-    }
+	&--active {
+		.accordion__control {
+			&::after {
+				visibility: hidden;
+			}
+		}
+	}
 
-    &::before,
-    &::after {
-      content: '';
-      background-color: $blue;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+	&__control {
+		width: 100%;
+		background-color: transparent;
+		cursor: pointer;
+		text-align: left;
+		border: none;
+		outline: none;
+		position: relative;
+		padding: 0;
 
-    &::before {
-      width: 30px;
-      height: 1px;
-    }
+		span {
+			font-weight: bold;
+			font-size: rem(24);
+			color: $blue;
 
-    &::after {
-      width: 1px;
-      height: 30px;
-      top: -15px;
-      right: 14px;
-    }
-  }
+			display: block;
+			max-width: 90%;
 
-  &__content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 17px 0px;
-    will-change: max-height;
-    transition: all var(--acordion-time) ease-out;
-    font-size: rem(20);
-    line-height: math.div(33, 20);
-    color: $blue;
-  }
+			@media(max-width: $breakpoint1200) {
+				font-size: rem(20);
+			}
+
+			@media(max-width: $breakpoint576) {
+				font-size: rem(11);
+			}
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			background-color: $blue;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		&::before {
+			width: 30px;
+			height: 1px;
+
+			@media(max-width: $breakpoint768) {
+				width: 20px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				width: 10px;
+			}
+		}
+
+		&::after {
+			width: 1px;
+			height: 30px;
+			top: -15px;
+			right: 14px;
+
+
+			@media(max-width: $breakpoint768) {
+				height: 20px;
+				top: -10px;
+				right: 9px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				height: 10px;
+				top: -4.6px;
+				right: 4.52px;
+			}
+		}
+	}
+
+	&__content {
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		padding: 17px 0px;
+		will-change: max-height;
+		transition: all var(--acordion-time) ease-out;
+		font-size: rem(20);
+		line-height: math.div(33, 20);
+		color: $blue;
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(11);
+		}
+	}
 }
 
 .accordion--active {
-  .accordion__content {
-    opacity: 1;
-  }
+	.accordion__content {
+		opacity: 1;
+	}
 }

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include("html/head.html", {
+	"title": "Услуги"
+	})
+</head>
+
+<body class="services-page webp">
+	<div class="wrapper">
+		@@include("html/components/header.html", {class: "blur"})
+		<main class="main">
+			<div class="intro">
+				<div class="container">
+					<div class="intro__content">
+						<h1 class="intro__title">ИТ Услуги:</h1>
+						<h2 class="intro__subtitle">Абонентское Обслуживание Компьютеров</h2>
+						<div class="intro__text-1">В стоимость входит:</div>
+						<ul class="intro__list">
+							<li>Виртуальный сервер;</li>
+							<li>Подменная техника;</li>
+							<li>Backup и почта</li>
+						</ul>
+						<div class="intro__text">Возможна частичная передача услуг на
+							IT OUTSOURCING</div>
+					</div>
+					<form class="intro__form">
+						<div class="intro__form-row">
+							<input type="text" class="intro__input" placeholder="Телефон">
+							<input type="text" class="intro__input" placeholder="Имя">
+						</div>
+						<button class="btn btn--full">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<!--<div class="breadcrumb-item">
+				<div class="container">
+					<nav class="breadcrumb" aria-label="breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a href="#" class="breadcrumb__link">Услуги</a>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>-->
+			@@include("html/sections/guarantee.html")
+			@@include("html/sections/who.html")
+			@@include("html/sections/tarifs.html")
+			@@include("html/sections/decide.html")
+			@@include("html/sections/partial-included.html")
+			<div class="system section-bg transparency">
+				<div class="container">
+					<h2 class="title system__title">IT поддержка офисов, удаленных филиалов и сотрудников:</h2>
+					<div>
+						<div class="info-block">
+							<div class="info-block__img">
+								<img src="img/services-admins/04.jpg" alt="">
+							</div>
+							<div class="info-block__col">
+								<div class="info-block__text">Обслуживаем государственные и коммерческие предприятия, фирмы и
+									организации Киева.</div>
+							</div>
+						</div>
+						<div class="info-block right">
+							<div class="info-block__col">
+								<div class="info-block__text">Поддержка удаленных филиалов, офисов, сотрудников работающих удаленно в
+									Украине, за ее пределами.</div>
+							</div>
+							<div class="info-block__img">
+								<img src="img/services-admins/05.jpg" alt="">
+							</div>
+						</div>
+						<div class="info-block">
+							<div class="info-block__img">
+								<img src="img/services-admins/06.jpg" alt="">
+							</div>
+							<div class="info-block__col">
+								<div class="info-block__text">Обслуживание малого и среднего бизнеса: от 5 до 100 сотрудников.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			@@include("html/sections/offer.html")
+			@@include("html/sections/stages-number.html")
+			<div class="benefits section">
+				<div class="container">
+					<h2 class="title benefits__title">Частичное или Комплексное Абонентское IT обслуживание?</h2>
+					<div class="card-row">
+						<div class="card">
+							<img src="@img/services/12.jpg" alt="" class="card__img">
+							<div class="card__info">Услуги системных администраторов</div>
+							<ul class="card__list">
+								<li class="card__item">Быстрая, квалифицированная помощь</li>
+								<li class="card__item">Удаленная техподдержка</li>
+								<li class="card__item">Плановые и экстренные выезды</li>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="@img/services/13.jpg" alt="" class="card__img">
+							<div class="card__info">Настройка и обслуживание компьютерной техники</div>
+							<ul class="card__list">
+								<li class="card__item">Подменный фонд на время ремонта</li>
+								<li class="card__item">Диагностика, ремонт, модернизация</li>
+								<li class="card__item">Профилактика и мониторинг</li>
+								<li class="card__item">Подменная техника, склад запчастей</li>
+								<li class="card__item ">Приобретение оргтехники</li>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="@img/services/14.jpg" alt="" class="card__img">
+							<div class="card__info">Сети</div>
+							<ul class="card__list">
+								<li class="card__item">Организация переезда, перенос рабочих мест</li>
+								<li class="card__item">Настройка сетевого оборудования</li>
+								<li class="card__item">Монтажные работы</li>
+								<li class="card__item">Настройка оборудования</li>
+								<li class="card__item">Настройка Mikrotik</li>
+								<li class="card__item">Настройка WiFi, бесшовные сети</li>
+								<li class="card__item">Создание и подключение VPN</li>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="@img/services/15.jpg" alt="" class="card__img">
+							<div class="card__info">Корпоративные сервисы</div>
+							<ul class="card__list">
+								<li class="card__item">Администрируем ваши, предоставляем свои</li>
+								<li class="card__item">Аренда серверного оборудования</li>
+								<li class="card__item">Корпоративная почта</li>
+								<li class="card__item">Информационная безопасность</li>
+								<li class="card__item">Резервное копирование, личное облако</li>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="@img/services/16.jpg" alt="" class="card__img">
+							<div class="card__info">Программное обеспечение</div>
+							<ul class="card__list">
+								<li class="card__item ">Покупка, лицензирование, переход на бесплатное ПО</li>
+								<li class="card__item">Любые ОС</li>
+								<li class="card__item">Помощь и внедрение</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			@@include("html/sections/kinds.html")
+			@@include("html/sections/questions.html")
+			<div class="stages section">
+				<div class="container">
+					<h2 class="title stages__title">Этапы обслуживания</h2>
+					<h3 class="subtitle stages__subtitle">10 шагов, чтобы навести порядок</h3>
+					<div class="stage">
+						<div class="stage__item">
+							<div class="stage__number stage__number-1">1</div>
+							<div class="stage__content">
+								<h4 class="stage__title">Заявка и встреча</h4>
+								<div class="stage__text">Связываемся, согласовываем время встречи.
+									Производим предварительную оценку состояния, обсуждаем условия сотрудничества, выбираем тарифный план,
+									даем на
+									утверждение договор.</div>
+							</div>
+						</div>
+						<div class="stage__item stage__item--left">
+							<div class="stage__content">
+								<h4 class="stage__title">Экспресс аудит, инвентаризация</h4>
+								<div class="stage__text">Тестирование, инвентаризация. Документируем процессы и сервисы: схема сети,
+									расположение техники, настройки сетевого
+									оборудования, используемые программы, доступы к панелям управления сайтами, провайдеры, внешние
+									контрагенты.</div>
+							</div>
+							<div class="stage__number stage__number-2">2</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__number stage__number-3">3</div>
+							<div class="stage__content">
+								<h4 class="stage__title">Работа с пользователями</h4>
+								<div class="stage__text">Выслушаем пожелания, решим проблемы. Поможем упорядочить данные для
+									последующего переноса.</div>
+							</div>
+						</div>
+						<div class="stage__item stage__item--left">
+							<div class="stage__content">
+								<h4 class="stage__title">Оценка состояния</h4>
+								<div class="stage__text">Даем анализ результатов текущего состояния. Предлагаем план действий.
+									Согласовываем время, бюджет, этапы.</div>
+							</div>
+							<div class="stage__number stage__number-4">4</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__number stage__number-5">5</div>
+							<div class="stage__content">
+								<h4 class="stage__title">Оборудование</h4>
+								<div class="stage__text">Ремонт, профилактика, модернизация. Чаще всего — замена жестких дисков (меняем
+									на SSD), добавление памяти, чистка от
+									пыли. В случае необходимости замены — помогаем с выбором модели, конфигурации, поставщика. Можем
+									предложить технику
+									бизнес-класса из Европы и США.</div>
+							</div>
+						</div>
+						<div class="stage__item stage__item--left">
+							<div class="stage__content">
+								<h4 class="stage__title">Резервное копирование</h4>
+								<div class="stage__text">Создаем архивные копии информации на момент начала работ. Выбираем оптимальный
+									вариант автоматического создания копий.
+									Сохраняем на собственные облачные ресурсы.
+									Для пользователей подключаем OneDrive, GoogleDisk, Dropbox, корпоративные NAS.</div>
+							</div>
+							<div class="stage__number stage__number-6">6</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__number stage__number-7">7</div>
+							<div class="stage__content">
+								<h4 class="stage__title">Сервер</h4>
+								<div class="stage__text">Нет собственного? Предоставим виртуальный. Упорядочиваем и переносим критически
+									важную информацию: документы, 1С,
+									бухгалтерские программы. Производим аудит безопасности, разграничиваем права доступа.</div>
+							</div>
+						</div>
+						<div class="stage__item stage__item--left">
+							<div class="stage__content">
+								<h4 class="stage__title">Программное обеспечение</h4>
+								<div class="stage__text">Операционные системы и программы: устанавливаем актуальные обновления,
+									оптимизируем, при необходимости переустанавливаем
+									с сохранением данных.
+									Удаляем неиспользуемые, приводим к единому внутреннему стандарту. Помогаем с переходом на свободно
+									распространяемое и
+									лицензионное ПО.</div>
+							</div>
+							<div class="stage__number stage__number-8">8</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__number stage__number-9">9</div>
+							<div class="stage__content">
+								<h4 class="stage__title">Безопасность и антивирус</h4>
+								<div class="stage__text">Независимо от наличия или отсутствия антивируса, проверяем минимум двумя
+									утилитами на наличие вирусов и вредоносного ПО.
+									Устанавливаем актуальные версии и базы. Обновляем прошивки роутеров, меняем пароли доступа.</div>
+							</div>
+						</div>
+						<div class="stage__item stage__item--left">
+							<div class="stage__content">
+								<h4 class="stage__title">Счета, акты, оплата</h4>
+								<div class="stage__text">Передаем пакет документации. Выставляем счет, закрываем акты.</div>
+							</div>
+							<div class="stage__number stage__number-10">10</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			@@include("html/sections/included.html")
+			<div class="faq section">
+				<div class="container">
+					<h2 class="title faq__title">Вопрос-ответ</h2>
+					<h3 class="subtitle faq__subtitle">Наиболее частые вопросы</h3>
+					<div class="accordion" data-accordion="accordion">
+						<button class="accordion__control">
+							<span>Что такое ИТ Аутсорсинг?</span>
+						</button>
+						<div class="accordion__content">
+							IT Outsourcing - это полная или частичная передача задач по сопровождению и поддержке ИТ инфраструктуры
+							тем компаниям,
+							которые занимаются этим профессионально.
+							Мы также пользуемся услугами Аутсорсинга. Правда бухгалтерского. Содержать собственного бухгалтера
+							нерентабельно:
+							необходимо платить зарплату, налоги, организовывать рабочее место. Нашу компанию взяла на аутсорс фирма,
+							которая
+							занимается только предоставлением бухгалтерских услуг. В итоге мы платим значительно меньше. Учет ведется,
+							отчеты
+							сдаются вовремя, мы не вникаем в изменение законодательной базы.
+						</div>
+					</div>
+					<div class="accordion" data-accordion="accordion1">
+						<button class="accordion__control">
+							<span>Если мне нужны не все услуги? Как это отразится на стоимости?</span>
+						</button>
+						<div class="accordion__content">
+							IT Outsourcing - это полная или частичная передача задач по сопровождению и поддержке ИТ инфраструктуры
+							тем компаниям,
+							которые занимаются этим профессионально.
+							Мы также пользуемся услугами Аутсорсинга. Правда бухгалтерского. Содержать собственного бухгалтера
+							нерентабельно:
+							необходимо платить зарплату, налоги, организовывать рабочее место. Нашу компанию взяла на аутсорс фирма,
+							которая
+							занимается только предоставлением бухгалтерских услуг. В итоге мы платим значительно меньше. Учет ведется,
+							отчеты
+							сдаются вовремя, мы не вникаем в изменение законодательной базы.
+						</div>
+					</div>
+					<div class="accordion" data-accordion="accordion2">
+						<button class="accordion__control">
+							<span>Кроме Киева есть филиалы в других городах. Как быть с ними?</span>
+						</button>
+						<div class="accordion__content">
+							IT Outsourcing - это полная или частичная передача задач по сопровождению и поддержке ИТ инфраструктуры
+							тем компаниям,
+							которые занимаются этим профессионально.
+							Мы также пользуемся услугами Аутсорсинга. Правда бухгалтерского. Содержать собственного бухгалтера
+							нерентабельно:
+							необходимо платить зарплату, налоги, организовывать рабочее место. Нашу компанию взяла на аутсорс фирма,
+							которая
+							занимается только предоставлением бухгалтерских услуг. В итоге мы платим значительно меньше. Учет ведется,
+							отчеты
+							сдаются вовремя, мы не вникаем в изменение законодательной базы.
+						</div>
+					</div>
+					<div class="accordion" data-accordion="accordion3">
+						<button class="accordion__control">
+							<span>Вы сможете починить мой домашний ноутбук?</span>
+						</button>
+						<div class="accordion__content">
+							IT Outsourcing - это полная или частичная передача задач по сопровождению и поддержке ИТ инфраструктуры
+							тем компаниям,
+							которые занимаются этим профессионально.
+							Мы также пользуемся услугами Аутсорсинга. Правда бухгалтерского. Содержать собственного бухгалтера
+							нерентабельно:
+							необходимо платить зарплату, налоги, организовывать рабочее место. Нашу компанию взяла на аутсорс фирма,
+							которая
+							занимается только предоставлением бухгалтерских услуг. В итоге мы платим значительно меньше. Учет ведется,
+							отчеты
+							сдаются вовремя, мы не вникаем в изменение законодательной базы.
+						</div>
+					</div>
+					<div class="accordion" data-accordion="accordion4">
+						<button class="accordion__control">
+							<span>У нас на фирме больше 100 компьютеров. Сможете нас обслуживать?</span>
+						</button>
+						<div class="accordion__content">
+							IT Outsourcing - это полная или частичная передача задач по сопровождению и поддержке ИТ инфраструктуры
+							тем компаниям,
+							которые занимаются этим профессионально.
+							Мы также пользуемся услугами Аутсорсинга. Правда бухгалтерского. Содержать собственного бухгалтера
+							нерентабельно:
+							необходимо платить зарплату, налоги, организовывать рабочее место. Нашу компанию взяла на аутсорс фирма,
+							которая
+							занимается только предоставлением бухгалтерских услуг. В итоге мы платим значительно меньше. Учет ведется,
+							отчеты
+							сдаются вовремя, мы не вникаем в изменение законодательной базы.
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include("html/components/footer.html")
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

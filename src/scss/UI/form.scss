@@ -6,6 +6,17 @@ input {
   border: 1px solid #969696;
   border-radius: 25px;
   outline: none;
+  transition: outline .3s;
+
+  @media(any-hover: hover) {
+    &:hover {
+      outline: 2px solid black;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid black;
+  }
 
   font-weight: 600;
   font-size: rem(18);

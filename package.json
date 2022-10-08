@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "gulp-cli": "^2.3.0",
+    "gulp-webp-html-nosvg": "^1.1.1",
     "nouislider": "^15.6.1",
     "swiper": "^8.4.2",
     "uninstall": "0.0.0"
@@ -47,7 +48,6 @@
     "gulp-util": "^3.0.8",
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^4.0.1",
-    "gulp-webp-html-nosvg": "^1.0.1",
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
     "imagemin-gifsicle": "^7.0.0",

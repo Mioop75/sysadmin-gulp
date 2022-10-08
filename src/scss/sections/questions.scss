@@ -1,48 +1,94 @@
 .questions {
-  background-image: url("/img/do-you-have-questions.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 68px 0;
-  margin-bottom: 120px;
+	background-image: url("../img/do-you-have-questions.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
+	.container {
+		max-width: 890px;
+	}
 
-  // .questions__title
+	// .questions__title
 
-  &__title {
-    color: $white;
+	&__title {
+		color: $white;
 
-    &:not(:last-child) {
-      margin-bottom: 68px;
-    }
-  }
+		&:not(:last-child) {
+			margin-bottom: 68px;
 
-  // .questions__form
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 50px;
+			}
 
-  &__form {
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-  }
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 22px;
+			}
+		}
+	}
 
-  // .questions__group
+	// .questions__form
 
-  &__group {
-    display: flex;
+	&__form {
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 45px;
-    }
-  }
+		.btn {
+			@media(max-width: $breakpoint1200) {
+				font-size: rem(15);
+				padding: 12px 16px;
+			}
 
-  // .questions__input
+			@media(max-width: $breakpoint576) {
+				padding: 11px 16px;
+			}
+		}
+	}
 
-  &__input {
-    text-align: left;
-    padding: 19px 13px;
+	// .questions__group
 
-    &+& {
-      margin-left: 42px;
-    }
-  }
+	&__group {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-bottom: 45px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 32px;
+			}
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 25px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 9px;
+			}
+		}
+	}
+
+	// .questions__input
+
+	&__input {
+		text-align: left;
+		padding: 19px 13px;
+
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(15);
+			padding: 13px 12px;
+		}
+
+		&+& {
+			margin-left: 42px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-left: 20px;
+			}
+
+			@media(max-width: $breakpoint768) {
+				margin-left: 15px;
+			}
+		}
+	}
+
 }

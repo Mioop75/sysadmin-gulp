@@ -1,0 +1,9 @@
+.home {
+	.intro__content {
+		max-width: 73%;
+
+		@media(max-width: $breakpoint768) {
+			max-width: 90%;
+		}
+	}
+}

@@ -7,9 +7,9 @@ export default function fixedMenuFunc() {
   function scrollFixedMenu() {
     const breakpoint = 5
     if (window.scrollY > breakpoint) {
-      menu.classList.add("header__fixed")
+      menu.classList.add("fixed")
     } else {
-      menu.classList.remove("header__fixed")
+      menu.classList.remove("fixed")
     }
   }
 

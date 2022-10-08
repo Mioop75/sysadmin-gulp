@@ -2,25 +2,46 @@ import isWebp from "./modules/js/webp.js"
 import burgerFunc from './modules/js/burger.js'
 import dropdown from './modules/js/dropdown.js'
 import Accordion from './modules/js/accordion.js'
+import fixedMenuFunc from "./modules/js/fixedMenu.js"
+
+fixedMenuFunc()
 
 import noUiSlider from 'nouislider';
-import Swiper from "swiper"
+import Swiper, { Navigation, Scrollbar } from "swiper"
 
 const swiper = new Swiper('.included__slider', {
-  slideClass: 'included__slide',
-  wrapperClass: 'included__wrapper',
-  slidesPerView: 3.5,
-  spaceBetween: 47,
-  initialSlide: 1,
+	slideClass: 'included__slide',
+	wrapperClass: 'included__wrapper',
+	slidesPerView: 1,
+	spaceBetween: 15,
+	loop: true,
+	centeredSlides: true,
+	modules: [Navigation, Scrollbar],
 
-  navigation: {
-    nextEl: '.included__button--next',
-    prevEl: '.included__button--prev',
-  },
+	navigation: {
+		nextEl: '.included__button--next',
+		prevEl: '.included__button--prev',
+	},
 
-  scrollbar: {
-    el: '.included__scrollbar',
-  },
+	scrollbar: {
+		el: '.included__scrollbar',
+		draggable: true,
+	},
+
+	breakpoints: {
+		577: {
+			slidesPerView: 2.2,
+			slidesPerGroup: 2,
+			initialSlide: 2,
+		},
+
+
+		993: {
+			slidesPerView: 3.5,
+			spaceBetween: 47,
+			initialSlide: 2,
+		}
+	}
 });
 
 isWebp()
@@ -35,6 +56,9 @@ const accordion2 = new Accordion("accordion2", {})
 const accordion3 = new Accordion("accordion3", {})
 const accordion4 = new Accordion("accordion4", {})
 const accordion5 = new Accordion("accordion5", {})
+const accordion6 = new Accordion("accordion6", {})
+const accordion7 = new Accordion("accordion7", {})
+const accordion8 = new Accordion("accordion8", {})
 
 // Range slides
 
@@ -45,57 +69,70 @@ const rangeRam = document.getElementById("range-ram")
 const rangeSSD = document.getElementById("range-ssd")
 const rangeReserve = document.getElementById("range-reserve")
 
-noUiSlider.create(rangeCountUsers, {
-  start: [1, 10],
-  connect: true,
+if (rangeCountUsers) {
+	noUiSlider.create(rangeCountUsers, {
+		start: [2],
+		connect: [true, false],
 
-  range: {
-    'min': 1,
-    "max": 10
-  }
-})
-noUiSlider.create(rangeCountServers, {
-  start: [1, 10],
-  connect: true,
+		range: {
+			'min': 1,
+			"max": 10
+		}
+	})
+}
 
-  range: {
-    'min': 1,
-    "max": 10
-  }
-})
-noUiSlider.create(rangeCpu, {
-  start: [1, 50],
-  connect: true,
+if (rangeCountServers) {
+	noUiSlider.create(rangeCountServers, {
+		start: [2],
+		connect: [true, false],
 
-  range: {
-    'min': 1,
-    "max": 50
-  }
-})
-noUiSlider.create(rangeSSD, {
-  start: [8, 128],
-  connect: true,
+		range: {
+			'min': 1,
+			"max": 10
+		}
+	})
+}
+if (rangeCpu) {
+	noUiSlider.create(rangeCpu, {
+		start: [10],
+		connect: [true, false],
 
-  range: {
-    'min': 8,
-    "max": 128
-  }
-})
-noUiSlider.create(rangeRam, {
-  start: [8, 128],
-  connect: true,
+		range: {
+			'min': 1,
+			"max": 50
+		}
+	})
+}
+if (rangeRam) {
+	noUiSlider.create(rangeRam, {
+		start: [15],
+		connect: [true, false],
 
-  range: {
-    'min': 8,
-    "max": 128
-  }
-})
-noUiSlider.create(rangeReserve, {
-  start: [120, 1000],
-  connect: true,
+		range: {
+			'min': 8,
+			"max": 128
+		}
+	})
+}
+if (rangeSSD) {
+	noUiSlider.create(rangeSSD, {
+		start: [50],
+		connect: [true, false],
 
-  range: {
-    'min': 120,
-    "max": 1000
-  }
-})
+		range: {
+			'min': 8,
+			"max": 128
+		}
+	})
+}
+if (rangeReserve) {
+	noUiSlider.create(rangeReserve, {
+		start: [200],
+		connect: [true, false],
+
+		range: {
+			'min': 120,
+			"max": 1000
+		}
+	})
+}

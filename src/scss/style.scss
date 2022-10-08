@@ -6,11 +6,54 @@
 
 @import "modules/mixins";
 
+// Animations
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+// Masks
+.transparency {
+	position: relative;
+	z-index: 5;
+
+	&::before {
+		content: '';
+		background: rgba(240, 240, 240, 0.83);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	&-lg {
+		&::before {
+			background: rgba(240, 240, 240, 0.90);
+		}
+	}
+}
+
 /*
 -------Reset----------
 */
 
 @import "modules/reset";
+
+/*
+-------Fonts----------
+*/
+
+@import "fonts";
 
 /*
 ----------Base-------------
@@ -34,10 +77,11 @@
 
 // Components
 @import "components/socials";
+@import "components/breadcrumb";
+@import "components/pagination";
 @import "components/card";
 @import "components/table";
 @import "components/calculator";
-
 
 // Sections
 @import "sections/intro";
@@ -55,14 +99,52 @@
 @import "sections/guarantee";
 @import "sections/why";
 @import "sections/fag";
+@import "sections/who";
+@import "sections/tarifs";
+@import "sections/partial-included";
+@import "sections/offer";
+@import "sections/stages-number";
+@import "sections/kinds";
 
+// Pages
+@import "pages/home";
+@import "pages/services";
+@import "pages/contacts";
+@import "pages/about";
+@import "pages/articles";
+@import "pages/article";
+
+// Dark Intro
+
+.dark-intro {
+	.intro {
+		color: $white;
+	}
+
+	.header {
+		color: $white;
+
+		.arrow::after {
+			background-color: $white;
+		}
+	}
+
+	.burger {
+
+		&::before,
+		&::after,
+		span {
+			background-color: #fff;
+		}
+	}
+}
 
 /*
 ---------Main-----------
 */
 
 .main {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
 /*

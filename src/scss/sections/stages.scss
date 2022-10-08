@@ -1,107 +1,200 @@
 .stages {
 
-  &.bg {
-    background-image: url("/img/services/bg-service.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 0 158px;
-    margin-bottom: 120px;
-  }
+	&.bg {
+		background-image: url("../img/services/bg-service.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 
-  // .stages__title
+	// .stages__title
 
-  &__title {}
+	&__title {}
 
-  // .stages__subtitle
+	// .stages__subtitle
 
-  &__subtitle {
-    max-width: 70%;
-    margin: 0 auto;
+	&__subtitle {
+		max-width: 70%;
+		margin: 0 auto;
 
-    &:not(:last-child) {
-      margin-bottom: 79px;
-    }
-  }
+		&:not(:last-child) {
+			margin-bottom: 79px;
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 41px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 87px;
+			}
+		}
+	}
 }
 
 .stage {
+	position: relative;
 
-  // .stage__item
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 50px;
+		left: 42.8%;
+		width: 2px;
+		height: 91%;
+		border: 2px dashed #073465;
 
-  &__item {
-    display: flex;
+		@media(max-width: $breakpoint1200) {
+			left: 30px;
+			bottom: 41px;
+		}
 
-    justify-content: flex-end;
-    align-items: center;
+		@media(max-width: $breakpoint768) {
+			left: 21px;
+			bottom: 66px;
+			height: 86%;
+		}
 
-    &--left {
-      justify-content: flex-start;
+		@media(max-width: $breakpoint576) {
+			bottom: 37px;
+		}
+	}
 
-      .stage__content {
-        text-align: right;
-        width: 35.8%;
-        margin-right: 50px;
-        margin-left: 0;
-      }
-    }
-  }
+	// .stage__item
 
-  // .stage__number
+	&__item {
+		display: flex;
 
-  &__number {
-    background: #073465;
-    border-radius: 50%;
-    padding: 7px 24px;
-    color: $white;
-    font-weight: 700;
-    font-size: rem(30);
-    line-height: math.div(50, 30);
-    position: relative;
-    box-shadow: inset 1px 2px 7px rgba(255, 255, 255, 0.55);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		@media(min-width: $min-breakpoint1200) {
+			justify-content: flex-end;
+		}
 
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: -67px;
-      left: 31px;
-      width: 3px;
-      height: 100%;
-      border: 3px dashed #073465;
-    }
-  }
+		&+& {
+			margin-top: 57px;
+		}
 
-  // .stage__content
+		&--left {
+			@media(min-width: $min-breakpoint1200) {
+				justify-content: flex-start;
+			}
 
-  &__content {
-    margin-left: 51px;
-    max-width: 50%;
-    margin-left: 50px;
-  }
+			.stage__content {
 
-  // .stage__title
+				@media(min-width: $min-breakpoint1200) {
+					width: 35.8%;
+					text-align: right;
+					margin-right: 50px;
+					margin-left: 0;
+				}
+			}
 
-  &__title {
-    font-weight: 600;
-    font-size: rem(25);
+			@media(max-width: $breakpoint1200) {
+				flex-direction: row-reverse;
+				justify-content: flex-end;
+			}
+		}
+	}
 
-    &:not(:last-child) {
-      margin-bottom: 13px;
-    }
-  }
+	// .stage__number
 
-  // .stage__text
+	&__number {
+		background: #073465;
+		border-radius: 50%;
+		width: 64px;
+		height: 64px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		font-weight: 700;
+		font-size: rem(30);
+		line-height: math.div(50, 30);
+		position: relative;
+		box-shadow: inset 1px 2px 7px rgba(255, 255, 255, 0.55);
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-  &__text {
-    font-size: rem(18);
+		@media(max-width: $breakpoint768) {
+			width: 46px;
+			height: 46px;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 13px;
-    }
-  }
 
-  // .stage__item--left
+		&-1 {
+			&::before {}
+		}
 
-  &__item--left {}
+		&-2 {
+			&::before {}
+		}
+
+		&-3 {
+			&::before {}
+
+		}
+
+		&-4 {
+			&::before {}
+		}
+	}
+
+	// .stage__content
+
+	&__content {
+		max-width: 50%;
+		margin-left: 50px;
+		margin-top: 5px;
+
+		@media(max-width: $breakpoint1200) {
+			max-width: 66%;
+			margin-left: 39px;
+		}
+	}
+
+	// .stage__title
+
+	&__title {
+		font-weight: 600;
+		font-size: rem(25);
+
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(16);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(13);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 13px;
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 6px;
+			}
+		}
+	}
+
+	// .stage__text
+
+	&__text {
+		font-size: rem(18);
+
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(15);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(10);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 13px;
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 9px;
+			}
+		}
+	}
+
+	// .stage__item--left
+
+	&__item--left {}
 }

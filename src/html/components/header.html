@@ -1,59 +1,110 @@
-<header class="header">
-  <div class="container header__container">
-    <a href="/" class="logo header__logo">
-      <img src="@img/logo.svg" alt="Логотип">
-    </a>
-    <nav class="menu header__menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <button class="menu__btn arrow">
-            ИТ-Услуги
-          </button>
-          <ul class="menu__sublist">
-            <li class="menu-sublist__item">
-              <a href="#" class="menu-sublist__link">
-                Пункт
-              </a>
-            </li>
-            <li class="menu-sublist__item">
-              <a href="#" class="menu-sublist__link">
-                Пункт
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
-        <li class="menu__item">
-          <button class="menu__btn arrow">
-            Полезное
-          </button>
-          <ul class="menu__sublist">
-            <li class="menu-sublist__item">
-              <a href="#" class="menu-sublist__link">
-                Пункт
-              </a>
-            </li>
-            <li class="menu-sublist__item">
-              <a href="#" class="menu-sublist__link">
-                Пункт
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-      </ul>
-      <div class="menu__phones">
-        <a href="#">+38(044)232-06-03</a>
-        <a href="#">+38(067)701-06-03</a>
-      </div>
-      @@include("./socials.html")
-      <div class="btn-group">
-        <button class="header__btn header__btn--active">ru</button>
-        <button class="header__btn">ua</button>
-      </div>
-    </nav>
-    <button class="burger">
-      <span></span>
-    </button>
-  </div>
+<header class="header @@class">
+	<div class="container header__container">
+		<button class="burger">
+			<span></span>
+		</button>
+		<a href="/" class="logo header__logo">
+			<img src="@img/logo.svg" alt="Логотип">
+		</a>
+		<div class="menu-mobile">
+			<ul class="menu__list">
+				<li class="menu__item">
+					<button class="menu__btn arrow">
+						ИТ-Услуги
+					</button>
+					<ul class="menu__sublist">
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+				<li class="menu__item">
+					<button class="menu__btn arrow">
+						Полезное
+					</button>
+					<ul class="menu__sublist">
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+			</ul>
+			<address class="menu__address">Киев, 03067 <br>
+				ул. Машиностроительная 42</address>
+		</div>
+		<nav class="menu header__menu">
+			<ul class="menu__list">
+				<li class="menu__item">
+					<button class="menu__btn arrow">
+						ИТ-Услуги
+					</button>
+					<ul class="menu__sublist">
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+				<li class="menu__item">
+					<button class="menu__btn arrow">
+						Полезное
+					</button>
+					<ul class="menu__sublist">
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+						<li class="menu-sublist__item">
+							<a href="#" class="menu-sublist__link">
+								Пункт
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+			</ul>
+			<address class="menu__address">Киев, 03067 <br>
+				ул. Машиностроительная 42</address>
+			<div class="menu__phones">
+				<a href="#">+38 (044) 232-06-03</a>
+				<a href="#">+38 (067) 701-06-03</a>
+			</div>
+			@@include("./socials.html")
+			<div class="menu-mobile__item">
+				<div class="menu__phones">
+					<a href="#">+38 (044) 232-06-03</a>
+					<a href="#">+38 (067) 701-06-03</a>
+				</div>
+				@@include("./socials.html")
+			</div>
+			<div class="btn-group">
+				<button class="header__btn header__btn--active">ru</button>
+				<button class="header__btn">ua</button>
+			</div>
+		</nav>
+	</div>
 </header>

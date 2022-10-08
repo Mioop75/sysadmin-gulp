@@ -1,0 +1,31 @@
+.kinds {
+  background: #F2F2F2;
+
+  // .kinds__title
+
+  &__title {
+  }
+
+  // .kinds__subtitle
+
+  &__subtitle {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 25px;
+			}
+    }
+  }
+}
+
+.accordion {
+
+  // .accordion__control
+
+  &__control {}
+
+  // .accordion__content
+
+  &__content {}
+}

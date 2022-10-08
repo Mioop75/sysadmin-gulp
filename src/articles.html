@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include("html/head.html", { "title": "Статьи" })
+</head>
+
+<body class="webp articles-page dark-intro">
+	<div class="wrapper">
+		@@include("html/components/header.html")
+		<main class="main">
+			<div class="intro blackout">
+				<div class="container">
+					<div class="intro__content">
+						<h1 class="intro__title">Статьи</h1>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<nav class="breadcrumb" aria-label="breadcrumb">
+					<ol class="breadcrumb__list">
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link">Главная</a>
+						</li>
+						<li class="breadcrumb__item breadcrumb__item--active">
+							<a href="#" class="breadcrumb__link">Полезнее</a>
+						</li>
+						<li class="breadcrumb__item breadcrumb__item--active" aria-current="page">
+							<a href="#" class="breadcrumb__link">Статьи и решение</a>
+						</li>
+					</ol>
+				</nav>
+				<!--<div class="articles-filter">
+					<div class="articles-filter__item">
+						<button class="articles-filter__btn">Все</button>
+					</div>
+					<div class="articles-filter__item">
+						<button class="articles-filter__btn">Wiki</button>
+					</div>
+					<div class="articles-filter__item">
+						<button class="articles-filter__btn">Статьи и решения</button>
+					</div>
+				</div>-->
+				<div class="category">
+					<p>Выберите категорию</p>
+					<div class="category__grid">
+						<button class="category__item">Анализ контента</button>
+						<button class="category__item">Анализ страниц</button>
+						<button class="category__item">Анализ ключевых слов</button>
+					</div>
+				</div>
+				<!--<form class="articles-page__search">
+					<input type="text" placeholder="Поиск" />
+					<button>Поиск</button>
+				</form>-->
+				<div class="blog">
+					<h2 class="title blog__title">БЛОГ СИСТЕМНОГО АДМИНИСТРАТОРА</h2>
+					<div class="articles">
+						<a href="article.html" class="articles__post">
+							<div class="articles__post-col">
+								<div class="articles__post-img">
+									<img src="@img/articles/01.jpg" alt="" />
+								</div>
+								<div class="articles__post-row">
+									<div class="articles__post-item articles__post-date">
+										<img src="@img/articles/calendar.svg" alt="" />
+										<span>01.09.2022</span>
+									</div>
+									<div class="articles__post-item articles__post-views">
+										<img src="@img/articles/eye.svg" alt="" />
+										<span>100</span>
+									</div>
+									<div class="articles__post-item articles__post-time">
+										<img src="@img/articles/o'clock.svg" alt="" />
+										<span>Время прочтения: 5 минут</span>
+									</div>
+								</div>
+							</div>
+							<div class="articles__post-col">
+								<h3 class="articles__post-title">
+									Как придумать и запомнить сложный пароль на 8-12-20
+									символов. Альтернативы.
+								</h3>
+								<div class="articles__post-text">
+									Это просто набор фраз, лишенный всякой структуры. Из него
+									непонятно, к какой странице какие запросы нужно применять.
+									Если делать это наобум, то и продвижение сайта пойдет так
+									же. В общем и целом группировка запросов нужна, чтобы
+									распределить семантику по страницам и тем самым повысить их
+									релевантность.
+								</div>
+							</div>
+						</a>
+						<a href="article.html" class="articles__post">
+							<div class="articles__post-col">
+								<div class="articles__post-img">
+									<img src="@img/articles/01.jpg" alt="" />
+								</div>
+								<div class="articles__post-row">
+									<div class="articles__post-item articles__post-date">
+										<img src="@img/articles/calendar.svg" alt="" />
+										<span>01.09.2022</span>
+									</div>
+									<div class="articles__post-item articles__post-views">
+										<img src="@img/articles/eye.svg" alt="" />
+										<span>100</span>
+									</div>
+									<div class="articles__post-item articles__post-time">
+										<img src="@img/articles/o'clock.svg" alt="" />
+										<span>Время прочтения: 5 минут</span>
+									</div>
+								</div>
+							</div>
+							<div class="articles__post-col">
+								<h3 class="articles__post-title">
+									Как придумать и запомнить сложный пароль на 8-12-20
+									символов. Альтернативы.
+								</h3>
+								<div class="articles__post-text">
+									Это просто набор фраз, лишенный всякой структуры. Из него
+									непонятно, к какой странице какие запросы нужно применять.
+									Если делать это наобум, то и продвижение сайта пойдет так
+									же. В общем и целом группировка запросов нужна, чтобы
+									распределить семантику по страницам и тем самым повысить их
+									релевантность.
+								</div>
+							</div>
+						</a>
+						<a href="article.html" class="articles__post">
+							<div class="articles__post-col">
+								<div class="articles__post-img">
+									<img src="@img/articles/01.jpg" alt="" />
+								</div>
+								<div class="articles__post-row">
+									<div class="articles__post-item articles__post-date">
+										<img src="@img/articles/calendar.svg" alt="" />
+										<span>01.09.2022</span>
+									</div>
+									<div class="articles__post-item articles__post-views">
+										<img src="@img/articles/eye.svg" alt="" />
+										<span>100</span>
+									</div>
+									<div class="articles__post-item articles__post-time">
+										<img src="@img/articles/o'clock.svg" alt="" />
+										<span>Время прочтения: 5 минут</span>
+									</div>
+								</div>
+							</div>
+							<div class="articles__post-col">
+								<h3 class="articles__post-title">
+									Как придумать и запомнить сложный пароль на 8-12-20
+									символов. Альтернативы.
+								</h3>
+								<div class="articles__post-text">
+									Это просто набор фраз, лишенный всякой структуры. Из него
+									непонятно, к какой странице какие запросы нужно применять.
+									Если делать это наобум, то и продвижение сайта пойдет так
+									же. В общем и целом группировка запросов нужна, чтобы
+									распределить семантику по страницам и тем самым повысить их
+									релевантность.
+								</div>
+							</div>
+						</a>
+						<a href="article.html" class="articles__post">
+							<div class="articles__post-col">
+								<div class="articles__post-img">
+									<img src="@img/articles/01.jpg" alt="" />
+								</div>
+								<div class="articles__post-row">
+									<div class="articles__post-item articles__post-date">
+										<img src="@img/articles/calendar.svg" alt="" />
+										<span>01.09.2022</span>
+									</div>
+									<div class="articles__post-item articles__post-views">
+										<img src="@img/articles/eye.svg" alt="" />
+										<span>100</span>
+									</div>
+									<div class="articles__post-item articles__post-time">
+										<img src="@img/articles/o'clock.svg" alt="" />
+										<span>Время прочтения: 5 минут</span>
+									</div>
+								</div>
+							</div>
+							<div class="articles__post-col">
+								<h3 class="articles__post-title">
+									Как придумать и запомнить сложный пароль на 8-12-20
+									символов. Альтернативы.
+								</h3>
+								<div class="articles__post-text">
+									Это просто набор фраз, лишенный всякой структуры. Из него
+									непонятно, к какой странице какие запросы нужно применять.
+									Если делать это наобум, то и продвижение сайта пойдет так
+									же. В общем и целом группировка запросов нужна, чтобы
+									распределить семантику по страницам и тем самым повысить их
+									релевантность.
+								</div>
+							</div>
+						</a>
+						<a href="article.html" class="articles__post">
+							<div class="articles__post-col">
+								<div class="articles__post-img">
+									<img src="@img/articles/01.jpg" alt="" />
+								</div>
+								<div class="articles__post-row">
+									<div class="articles__post-item articles__post-date">
+										<img src="@img/articles/calendar.svg" alt="" />
+										<span>01.09.2022</span>
+									</div>
+									<div class="articles__post-item articles__post-views">
+										<img src="@img/articles/eye.svg" alt="" />
+										<span>100</span>
+									</div>
+									<div class="articles__post-item articles__post-time">
+										<img src="@img/articles/o'clock.svg" alt="" />
+										<span>Время прочтения: 5 минут</span>
+									</div>
+								</div>
+							</div>
+							<div class="articles__post-col">
+								<h3 class="articles__post-title">
+									Как придумать и запомнить сложный пароль на 8-12-20
+									символов. Альтернативы.
+								</h3>
+								<div class="articles__post-text">
+									Это просто набор фраз, лишенный всякой структуры. Из него
+									непонятно, к какой странице какие запросы нужно применять.
+									Если делать это наобум, то и продвижение сайта пойдет так
+									же. В общем и целом группировка запросов нужна, чтобы
+									распределить семантику по страницам и тем самым повысить их
+									релевантность.
+								</div>
+							</div>
+						</a>
+					</div>
+					<nav class="pagination">
+						<ul class="pagination__list">
+							<li>
+								<a href="#" class="pagination__item pagination__item--active" aria-current="page">1</a>
+							</li>
+							<li>
+								<a href="#" class="pagination__item">2</a>
+							</li>
+							<li>
+								<a href="#" class="pagination__item">3</a>
+							</li>
+							<li>
+								<a href="#" class="pagination__item">4</a>
+							</li>
+							<li>
+								<a href="#" class="pagination__item">5</a>
+							</li>
+							<li>
+								<a href="#" class="pagination__item">6</a>
+							</li>
+						</ul>
+						<img src="@img/arrow-pagination.svg" alt="" class="pagination__arrow" />
+					</nav>
+				</div>
+				<div class="recommend">
+					<h2 class="title recommend__title">Рекомендуемые статьи:</h2>
+					<ul class="recommend__list">
+						<li class="recommend__item">
+							<a href="#" class="recommend__link">Как придумать и запомнить сложный пароль на 8-12-20 символов.
+								Альтернативы.</a>
+						</li>
+						<li class="recommend__item">
+							<a href="#" class="recommend__link">Как придумать и запомнить сложный пароль на 8-12-20 символов.
+								Альтернативы.</a>
+						</li>
+						<li class="recommend__item">
+							<a href="#" class="recommend__link">Как придумать и запомнить сложный пароль на 8-12-20 символов.
+								Альтернативы.</a>
+						</li>
+						<li class="recommend__item">
+							<a href="#" class="recommend__link">Как придумать и запомнить сложный пароль на 8-12-20 символов.
+								Альтернативы.</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			@@include("html/sections/decide.html")
+		</main>
+		@@include("html/components/footer.html")
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

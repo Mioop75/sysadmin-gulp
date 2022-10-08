@@ -1,30 +1,70 @@
 .guarantee {
-  margin-bottom: 144px;
+
   // .guarantee__title
 
-  &__title {}
+  &__title {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 
   // .guarantee__subtitle
 
   &__subtitle {
     &:not(:last-child) {
       margin-bottom: 109px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 74px;
+			}
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 69px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 64px;
+			}
     }
   }
 }
 
 .guarantee-block {
   box-shadow: inset 9px 10px 11px rgba(255, 255, 255, 0.39);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   background: #EBEBEB;
   border-radius: 5px;
-  padding: 0 25px 44px 25px;
+  padding: 0 13px 44px 25px;
+
+  transition: transform .3s;
+
+  @media(any-hover: hover) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 
   // .guarantee-block-grid
 
   &-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
     gap: 53px 30px;
+
+		@media(max-width: $breakpoint1200) {
+			gap: 42px 30px;
+		}
+
+		@media(max-width: $breakpoint768) {
+			gap: 86px 15px;
+		}
+
+		@media(max-width: $breakpoint576) {
+			gap: 46px;
+		}
+
+		@media(max-width: $breakpoint360) {
+			grid-template-columns: 1fr;
+		}
   }
 
   // .guarantee-block__img
@@ -32,11 +72,20 @@
   &__img {
     width: 88px;
     height: 88px;
-    margin: -10px auto 0;
+    margin: -18px auto 0;
 
     &:not(:last-child) {
       margin-bottom: 40px;
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 20px;
+			}
     }
+
+		@media(max-width: $breakpoint768) {
+			width: 75px;
+			height: 75px;
+		}
   }
 
   // .guarantee-block__title
@@ -45,8 +94,24 @@
     font-weight: 700;
     font-size: rem(20);
 
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(17);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(13);
+		}
+
     &:not(:last-child) {
       margin-bottom: 20px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 27px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 17px;
+			}
     }
   }
 
@@ -54,6 +119,14 @@
 
   &__text {
     font-size: rem(16);
+
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(13);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(10);
+		}
 
     &:not(:last-child) {
       margin-bottom: 20px;

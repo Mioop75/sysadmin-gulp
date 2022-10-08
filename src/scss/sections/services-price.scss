@@ -1,5 +1,4 @@
 .services-price {
-  margin-bottom: 102px;
 
   &__title {
     max-width: 75%;
@@ -9,6 +8,18 @@
   &__subtitle {
     &:not(:last-child) {
       margin-bottom: 96px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 86px;
+			}
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 80px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 37px;
+			}
     }
   }
 }

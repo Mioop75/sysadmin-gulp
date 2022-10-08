@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include("html/head.html",
+  {
+  "title": "Контакты"
+  })
+</head>
+
+<body class="webp contacts-page dark-intro">
+  <div class="wrapper">
+    @@include("html/components/header.html")
+    <main class="main">
+      <div class="intro blackout">
+        <div class="container">
+          <div class="intro__content">
+            <h1 class="intro__title">Контакты компании Sysadmin.com.ua</h1>
+            <h2 class="intro__subtitle">Горячая линия техподдержки работает КРУГЛОСУТОЧНО</h2>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb-current">
+        <div>Услуги системных администраторов</div>
+        <img src="img/two-arrows.svg" alt="">
+        <div>Контакты</div>
+      </div>
+      <div class="bg-gray">
+        <div class="contacts-page__item contacts-page__item-1">
+          <div class="container">
+            <h2 class="title">График работы</h2>
+            <ul>
+              <li>Плановый выезд к клиенту в рабочие дни с 8.00 - 20.00</li>
+              <li>По вопросам связанными с работой и подключением к серверу - КРУГЛОСУТОЧНО</li>
+              <li>Абоненты тарифного плана "Расширенный" - КРУГЛОСУТОЧНО</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts-page__item contacts-page__item-2">
+          <div class="container">
+            <div class="title">Телефоны и мессенджеры</div>
+            <ul class="contacts-page__item-2-list">
+              <li><a href="">+ 38 (044) 232-06-03</a> - Офис, горячая линия
+              </li>
+              <li><a href="">+ 38 (067) 701-06-03 </a>- Общие вопросы
+              </li>
+              <li><a href="">+ 38 (067) 536-33-17</a> - Первая линия техподдержки</li>
+            </ul>
+            <ul class="socials__list">
+              <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/telegram.svg"
+                    alt=""></a>
+              </li>
+              <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/viber.svg" alt=""></a>
+              </li>
+            </ul>
+            <div class="contacts">
+              <b>Skype:</b> Sysadmin.com.ua <br>
+              <b>E-mail:</b> <a href="mailto:info@sysadmin.com.ua">info@sysadmin.com.ua</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-page__item contacts-page__item-3">
+          <div class="container">
+            <div class="title">Адрес</div>
+            <address>Киев, ул. Машиностроительная, 42 <br>
+              Административное здание ПАО "Завод стеклоизделий", 2 этаж</address>
+          </div>
+        </div>
+      </div>
+      <iframe class="contacts-page__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5460533235964!2d30.425047715943958!3d50.44955559531003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc3e655a50a5%3A0x11b93674272c372c!2z0KfQkNCeICLQl9Cw0LLQvtC0INGB0YLQtdC60LvQvtC40LfQtNC10LvQuNC5Ig!5e0!3m2!1sru!2sru!4v1664907807633!5m2!1sru!2sru"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      @@include("html/sections/questions.html")
+    </main>
+    @@include("html/components/footer.html")
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

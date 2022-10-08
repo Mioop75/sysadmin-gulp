@@ -18,5 +18,19 @@
   // .socials__link
 
   &__link {
+    @media(any-hover: hover) {
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    img {
+      transition: transform .3s;
+      width: 25px;
+      height: 25px;
+    }
   }
+
 }

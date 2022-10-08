@@ -1,133 +1,292 @@
 .footer {
-  background-image: url("/img/footer-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 44px 0 21px;
+	background-image: url("../img/footer-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 44px 0 21px;
 
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	@media(max-width: $breakpoint992) {
+		padding: 31px 0 15px;
+	}
 
-  &__item {
-    &:nth-child(2) {
-      padding: 0 30px;
-      border-left: 1px solid #FFFFFF;
-      border-right: 1px solid #FFFFFF;
-      margin: 0 16px;
-    }
-  }
+	@media(max-width: $breakpoint768) {
+		padding: 15px 0;
+	}
 
-  &__title {
-    font-weight: 600;
-    font-size: rem(20);
-    color: #fff;
+	@media(max-width: $breakpoint576) {
+		padding: 26px 0;
+	}
 
-    &:not(:last-child) {
-      margin-bottom: 26px;
-    }
+	&__container {
+		display: flex;
+		justify-content: space-between;
 
-    &--center {
-      text-align: center;
-    }
-  }
+		@media(max-width: $breakpoint576) {
+			flex-direction: column;
+			justify-content: stretch;
+		}
+	}
 
-  &__list {
-    list-style-type: none;
-  }
+	&__item {
 
-  &__phones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+		&:first-child {
+			@media(max-width: $breakpoint576) {
+				order: 1;
+				padding: 30px 0;
+				border-top: 1px solid #FFFFFF;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
 
-    &:not(:last-child) {
-      margin-bottom: 26px;
-    }
+			}
 
-    a {
-      font-size: rem(18);
-      letter-spacing: 0.02em;
-      line-height: math.div(20, 12);
-      color: #fff;
+			@media(max-width: $breakpoint360) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&:nth-child(2) {
+			padding: 0 30px;
+			border-left: 1px solid #FFFFFF;
+			border-right: 1px solid #FFFFFF;
+			margin: 0 16px;
+			flex-basis: 34%;
+
+			@media(max-width: $breakpoint576) {
+				border-right: none;
+				border-left: none;
+				margin: 0 0 20px;
+				padding: 0;
+				flex-basis: 100%;
+				display: flex;
+				justify-content: space-between;
+				max-width: 70%;
+			}
+		}
+
+		&:nth-child(3) {
+			flex-basis: 24%;
+
+			@media(max-width: $breakpoint992) {
+				.footer__title {
+					&:not(:last-child) {
+						margin-bottom: 26px;
+					}
+				}
+			}
+
+			@media(max-width: $breakpoint576) {
+				order: -1;
+				flex-basis: 100%;
+				margin-bottom: 30px;
+				border-bottom: 1px solid #FFFFFF;
+				padding: 0 0 24px;
+			}
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: rem(20);
+		color: #fff;
+
+		@media(max-width: $breakpoint992) {
+			font-size: rem(16);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(13);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 26px;
+
+			@media(max-width: $breakpoint992) {
+				margin-bottom: 13px;
+			}
+		}
+
+		&--center {
+			text-align: center;
+		}
+	}
+
+	&__list {
+		list-style-type: none;
+	}
+
+	&__phones {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&:not(:last-child) {
+			margin-bottom: 26px;
+
+			@media(max-width: $breakpoint992) {
+				margin-bottom: 13px;
+			}
+		}
+
+		a {
+			font-size: rem(18);
+			letter-spacing: 0.02em;
+			line-height: math.div(20, 12);
+			color: #fff;
+
+			@media(max-width: $breakpoint992) {
+				font-size: rem(12);
+			}
+
+			@media(any-hover: hover) {
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+	}
+
+	&__address {
+		font-size: rem(18);
+		color: #fff;
+
+		@media(max-width: $breakpoint576) {
+			display: none;
+		}
+
+		&-mobile {
+			font-size: rem(11);
+			display: none;
+			margin-bottom: 13px;
+
+			@media(max-width: $breakpoint576) {
+				display: block;
+			}
+		}
+
+		@media(max-width: $breakpoint992) {
+			font-size: rem(12);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 26px;
+
+			@media(max-width: $breakpoint992) {
+				margin-bottom: 13px;
+			}
+		}
+	}
+
+	&__map {
+		display: flex;
+		align-items: center;
+		margin-bottom: 26px;
+		font-size: rem(18);
+		color: #fff;
+
+		img {
+			margin-right: 7px;
+			width: 30px;
+			height: 39px;
 
 
-      @media(any-hover: hover) {
-        &:hover {
-          color: $red;
-        }
-      }
-    }
-  }
+			@media(max-width: $breakpoint768) {
+				width: 21px;
+				height: 27px;
+			}
+		}
 
-  &__address {
-    font-size: rem(18);
-    color: #fff;
+		&:not(:last-child) {
+			margin-bottom: 26px;
 
-    &:not(:last-child) {
-      margin-bottom: 26px;
-    }
-  }
+			@media(max-width: $breakpoint992) {
+				margin-bottom: 13px;
+			}
+		}
+	}
 
-  &__map {
-    display: flex;
-    align-items: center;
-    margin-bottom: 26px;
-    font-size: rem(18);
-    color: #fff;
+	.socials__link img {
+		width: 45px;
+		height: 45px;
 
-    img {
-      margin-right: 7px;
-    }
+		@media(max-width: $breakpoint992) {
+			width: 35px;
+			height: 35px;
+		}
+	}
 
-    &:not(:last-child) {
-      margin-bottom: 26px;
-    }
-  }
+	&__input {
+		margin-bottom: 15px;
 
-  .socials__link img {
-    width: 45px;
-    height: 45px;
-  }
+		@media(max-width: $breakpoint992) {
+			font-size: rem(18);
+			padding: 10px 16px;
+		}
 
-  &__input {
-    margin-bottom: 15px;
-  }
+		@media(max-width: $breakpoint576) {
+			font-size: rem(15);
+			padding: 11px 16px;
+		}
+	}
 
-  form {
-    margin-bottom: 42px;
-  }
+	form {
+		margin-bottom: 42px;
 
-  &__link {
-    display: block;
-    font-size: rem(12);
-    color: #fff;
-    text-align: center;
+		@media(max-width: $breakpoint768) {
+			margin-bottom: 9px;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
+		@media(max-width: $breakpoint576) {
+			margin-bottom: 20px;
+		}
+
+		.btn {
+
+			@media(max-width: $breakpoint768) {
+				font-size: rem(18);
+				padding: 10px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				padding: 11px 16px;
+				font-size: rem(15);
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		font-size: rem(12);
+		color: #fff;
+		text-align: center;
+		text-decoration: underline;
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(10);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
 }
 
 .footer-list {
 
-  &__item {
-    &+& {
-      margin-top: 6px;
-    }
-  }
+	&__item {
+		&+& {
+			margin-top: 6px;
+		}
 
-  &__link {
-    color: #fff;
-    font-size: rem(18);
+	}
 
-    @media(any-hover: hover) {
-      &:hover {
-        color: $red;
-      }
-    }
-  }
+	&__link {
+		color: #fff;
+		font-size: rem(18);
+
+		@media(any-hover: hover) {
+			&:hover {
+				color: $red;
+			}
+		}
+	}
 }

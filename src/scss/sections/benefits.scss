@@ -1,5 +1,4 @@
 .benefits {
-  margin-bottom: 60px;
 
   // .benefits__title
 
@@ -13,6 +12,18 @@
   &__subtitle {
     &:not(:last-child) {
       margin-bottom: 97px;
+
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 45px;
+			}
+
+			@media(max-width: $breakpoint768) {
+				margin-bottom: 30px;
+			}
+
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 41px;
+			}
     }
   }
 }

@@ -1,0 +1,80 @@
+.stages-number {
+	background-image: url("../img/stages-number/bg-stages-number.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+
+	// .stages-number__grid
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+		gap: 150px 130px;
+		counter-reset: item-stages;
+
+		@media(max-width: $breakpoint768) {
+			gap: 100px;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	// .stages-number__item
+
+	&__item {
+		z-index: 2;
+
+		// .stages-number__item-title
+		&-title {
+			position: relative;
+
+			&::before {
+				counter-increment: item-stages;
+				content: counter(item-stages);
+				position: absolute;
+				font-weight: 700;
+				font-size: 128px;
+				color: #E1E1E1;
+				top: -92px;
+				left: 0;
+				z-index: -1;
+
+				@media(max-width: $breakpoint576) {
+					font-size: 75px;
+					top: -55px;
+				}
+			}
+
+			@media(max-width: $breakpoint576) {
+				font-size: rem(16);
+			}
+
+			font-weight: 700;
+
+			&:not(:last-child) {
+				margin-bottom: 23px;
+
+				@media(max-width: $breakpoint576) {
+					margin-bottom: 17px;
+				}
+			}
+		}
+
+		// .stages-number__item-text
+		&-text {
+			font-size: rem(16);
+
+			@media(max-width: $breakpoint576) {
+				font-size: rem(13);
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 23px;
+
+				@media(max-width: $breakpoint576) {
+					margin-bottom: 17px;
+				}
+			}
+		}
+	}
+}

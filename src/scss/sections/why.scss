@@ -1,64 +1,93 @@
 .why {
-  background-image: url("/img/bg-what.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 120px 0 184px;
-  margin-bottom: 120px;
+	background-image: url("../img/bg-what.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
-  // .why__title
+	// .why__title
 
-  &__title {
-    max-width: 55%;
-    margin: 0 auto;
-  }
+	&__title {
+		max-width: 52%;
+		margin: 0 auto;
+	}
 
-  // .why__subtitle
+	// .why__subtitle
 
-  &__subtitle {
-    &:not(:last-child) {
-      margin-bottom: 138px;
-    }
-  }
+	&__subtitle {
+		&:not(:last-child) {
+			margin-bottom: 138px;
 
-  // .why__grid
+			@media(max-width: $breakpoint1200) {
+				margin-bottom: 90px;
+			}
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
-    gap: 120px 30px;
-  }
+			@media(max-width: $breakpoint576) {
+				margin-bottom: 54px;
+			}
+		}
+	}
 
-  // .why__item
+	// .why__grid
 
-  &__item {}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
+		gap: 120px 30px;
 
-  // .why__item-1
+		@media(max-width: $breakpoint1200) {
+			grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+			gap: 100px 25px;
+		}
 
-  &__item-1 {
-    font-weight: 700;
-    font-size: rem(20);
-    color: $blue;
+		@media(max-width: $breakpoint768) {
+			gap: 95px 80px;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 19px;
-    }
-  }
+		@media(max-width: $breakpoint576) {
+			gap: 55px;
+		}
+	}
 
-  // .why__item-2
+	// .why__item
 
-  &__item-2 {
-    font-weight: 500;
-    font-size: rem(16);
+	&__item {}
 
-    &:not(:last-child) {
-      margin-bottom: 19px;
-    }
-  }
+	// .why__item-1
+
+	&__item-1 {
+		font-weight: 700;
+		font-size: rem(20);
+		color: $blue;
+
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(16);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(13);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 19px;
+		}
+	}
+
+	// .why__item-2
+
+	&__item-2 {
+		font-weight: 500;
+		font-size: rem(16);
+
+		@media(max-width: $breakpoint1200) {
+			font-size: rem(13);
+		}
+
+		@media(max-width: $breakpoint576) {
+			font-size: rem(10);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 19px;
+		}
+	}
 }
-
-.container {}
-
-.title {}
-
-.subtitle {}

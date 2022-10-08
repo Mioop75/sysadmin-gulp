@@ -12,8 +12,6 @@ $breakpoint576: 575.98px;
 $breakpoint425: 424.98px;
 $breakpoint360: 358.98px;
 
-$headerBreakpoint: 767.98px;
-
 // Min
 
 $min-breakpoint1400: 1400px;
@@ -23,8 +21,6 @@ $min-breakpoint768: 768px;
 $min-breakpoint576: 576px;
 $min-breakpoint425: 425px;
 $min-breakpoint360: 360px;
-
-$min-headerBreakpoint: 768px;
 
 // Colors
 
@@ -38,9 +34,9 @@ $colorLinkHover: $red;
 // Fonts
 
 // Default Varibles
-$defaultFont: "Gilroy", sans-serif;
+$defaultFont: "gilroy", sans-serif;
 $fontWeight: 500;
-$fontSize: 13;
-$lineHeight: 15;
+$fontSize: 20;
+$lineHeight: 24;
 $text-color: $black;
 $container: 1139px;

@@ -8,8 +8,10 @@ export default class Accordion {
 
     this.options = Object.assign(defaultOptions, options)
     this.accordion = document.querySelector(`[data-accordion="${selector}"]`)
-    this.control = this.accordion.querySelector(".accordion__control")
-    this.content = this.accordion.querySelector(".accordion__content")
+    if(this.accordion) {
+      this.control = this.accordion.querySelector(".accordion__control")
+      this.content = this.accordion.querySelector(".accordion__content")
+    }
     this.event()
   }
 

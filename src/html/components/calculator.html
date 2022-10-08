@@ -2,20 +2,20 @@
   <div class="container calculator__container">
     <div class="filter">
       <div class="filter__item filter__item-1">
-        <div class="filter__item-1">
+        <div class="filter__content-1">
           <div class="filter__between">
             <div class="filter__item-text">Количество пользователей</div>
             <div class="filter__item-number border">10</div>
           </div>
           <div class="filter__range" id="range-countUsers"></div>
-          <div class="filter__row">
+          <div class="filter__between">
             <div class="filter__item-number">1</div>
             <div class="filter__item-number">больше 50</div>
           </div>
         </div>
-        <div class="filter__item-2">
+        <div class="filter__content-2">
           <div class="filter__between">
-            <div class="filter__item-text">Количество Ваших серверов (включая виртуальные),
+            <div class="filter__item-text">Количество Ваших серверов (включая виртуальные), <br>
               которые нужно администрировать</div>
             <div class="filter__item-number border">10</div>
           </div>
@@ -45,7 +45,13 @@
               </button>
             </div>
           </div>
-          <div class="filter__range" id="range-cpu"></div>
+          <div class="filter-range">
+            <div class="filter__range" id="range-cpu"></div>
+            <div class="filter__between">
+              <div class="filter__item-number">1</div>
+              <div class="filter__item-number">50</div>
+            </div>
+          </div>
         </div>
         <div class="filter__row">
           <div class="filter__name">Оперативная память (RAM)</div>
@@ -64,7 +70,13 @@
               </button>
             </div>
           </div>
-          <div class="filter__range" id="range-ram"></div>
+          <div class="filter-range">
+            <div class="filter__range" id="range-ram"></div>
+            <div class="filter__between">
+              <div class="filter__item-number">8</div>
+              <div class="filter__item-number">128</div>
+            </div>
+          </div>
         </div>
         <div class="filter__row">
           <div class="filter__name">Объем диска SSD / NVME</div>
@@ -83,7 +95,13 @@
               </button>
             </div>
           </div>
-          <div class="filter__range" id="range-ssd"></div>
+          <div class="filter-range">
+            <div class="filter__range" id="range-ssd"></div>
+            <div class="filter__between">
+              <div class="filter__item-number">120 ГБ</div>
+              <div class="filter__item-number">1 ТБ</div>
+            </div>
+          </div>
         </div>
         <div class="filter__row">
           <div class="filter__name">Количество резервных копий</div>
@@ -106,33 +124,33 @@
         </div>
       </div>
       <div class="filter__item filter__item-3">
-        <div class="filter__row">
+        <div class="filter__flex">
           <div class="filter__item-text">Режим обслуживания</div>
           <div class="filter__choice-grid">
             <label class="filter__choice">
               <input type="radio" name="choice-mode-service">
-              <span>Обычний</span>
+              <div class="filter__block">Обычний</div>
             </label>
             <label class="filter__choice">
               <input type="radio" name="choice-mode-service">
-              <span>Только удаленный</span>
+              <div class="filter__block">Только удаленный</div>
             </label>
           </div>
         </div>
-        <div class="filter__row">
+        <div class="filter__flex">
           <div class="filter__item-text">График</div>
           <div class="filter__choice-grid">
             <label class="filter__choice">
               <input type="radio" name="choice-schedule" placeholder="">
-              <span>9:00 до 18:00</span>
+              <div class="filter__block">9:00 до 18:00</div>
             </label>
             <label class="filter__choice">
               <input type="radio" name="choice-schedule" placeholder="">
-              <span>8:00 до 22:00</span>
+              <div class="filter__block">8:00 до 22:00</div>
             </label>
             <label class="filter__choice">
               <input type="radio" name="choice-schedule" placeholder="">
-              <span>24/7</span>
+              <div class="filter__block">24/7</div>
             </label>
           </div>
         </div>
@@ -142,47 +160,47 @@
         <div class="filter__choice-grid">
           <label class="filter__choice">
             <input type="radio" name="choice-it-support">
-            <span>Удаленный</span>
+            <div class="filter__block">Удаленный</div>
           </label>
           <label class="filter__choice">
             <input type="radio" name="choice-it-support">
-            <span>Стандарт</span>
+            <div class="filter__block">Стандарт</div>
           </label>
           <label class="filter__choice">
             <input type="radio" name="choice-it-support">
-            <span>Расширенный</span>
+            <div class="filter__block">Расширенный</div>
           </label>
         </div>
       </div>
       <div class="filter__item filter__item-5">
         <div class="filter__choice-grid">
           <label class="filter__choice">
-            <input type="radio" name="choice-schedule">
-            <span>
-              < 5 ПК</span>
+            <input type="radio" name="choice-countComputers">
+            <div class="filter__block">
+              < 5 ПК</div>
           </label>
           <label class="filter__choice">
-            <input type="radio" name="choice-schedule" class="filter__choice">
-            <span>
-              < 10 ПК</span>
+            <input type="radio" name="choice-countComputers" class="filter__choice">
+            <div class="filter__block">
+              < 10 ПК</div>
           </label>
           <label class="filter__choice">
-            <input type="radio" name="choice-schedule" class="filter__choice" disabled>
-            <span>
-              < 20 ПК</span>
+            <input type="radio" name="choice-countComputers" class="filter__choice" disabled>
+            <div class="filter__block">
+              < 20 ПК</div>
           </label>
           <label class="filter__choice">
-            <input type="radio" name="choice-schedule" class="filter__choice" disabled>
-            <span>> 21ПК</span>
+            <input type="radio" name="choice-countComputers" class="filter__choice" disabled>
+            <div class="filter__block">> 21ПК</div>
           </label>
         </div>
-        <button class="btn btn--full filter__btn">Рассчитать</button>
+        <button class="btn btn--full filter__btn" type="button">Рассчитать</button>
       </div>
     </div>
     <div class="calculator__info">
       <div class="calculator__info-1">Ориентировочная стоимость</div>
-      <div class="calculator__info-2"><span>15 000</span> грн/мес</div>
-      <button class="btn btn--full">Отправить КП</button>
+      <div class="calculator__info-2"><span>15 000</span></div>
+      <button class="btn btn--full" type="button" data-path="sendKP" data-animation="fadeInUp" data-speed="400">Отправить КП</button>
       <div class="calculator__info-3">Нужна помощь?</div>
       <div class="calculator__info-4">
         <p>Звоните ежедневно
@@ -200,7 +218,7 @@
       <div class="calculator__info-5">
         <p>Или напишите нам в мессенджере:</p>
         <ul class="socials__list">
-          <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/telegram.png" alt=""></a>
+          <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/telegram.svg" alt=""></a>
           </li>
           <li class="socials__item"><a href="#" class="socials__link"><img src="img/socials/whatapp.svg" alt=""></a>
           </li>
